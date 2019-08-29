@@ -47,7 +47,7 @@ class Topic(object):
         topic = content["topic"]
         options = ""
         for k, v in enumerate(content["options"]):
-            options += chr(k+65) + " "+  v["content"] + "\n\n"
+            options += chr(k+65) + ".   " +  v["content"] + "\n\n"
         analysis = content["analysis"]["analysisContent"]
         difficulty = content["difficulty"]
         return topic, options, analysis, difficulty
